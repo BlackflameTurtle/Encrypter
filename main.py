@@ -3,7 +3,7 @@ import sys
 import pygame
 from pygame.locals import *
 pygame.font.init()
-import pyperclip
+
 class Acode:
     def __init__(self, message, coded):
         self.title = False
@@ -43,7 +43,7 @@ class CCipher:
         self.shift = shift
         self.message = message
         self.punctuation = ".,?! "
-        self.alphabet = "abcdefghijklmnoκpqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZоеíսһахсԁрӏјąïօզυʝỏḷúżýʐʂ"
+        self.alphabet = "abcdefghijklmnoκpqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
         self.new_message = ""
     def encryption(self):
         for i in range(len(self.message)):
